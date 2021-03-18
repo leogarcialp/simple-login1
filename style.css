@@ -1,0 +1,283 @@
+:root {
+   --opacity1: rgba(0, 0, 0, 0.596);
+   --opacity2: rgba(0, 0, 0, 0.3);
+
+}
+
+* {  
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   background-image: url('./img/fondo-desktop2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   font-family: 'Monaco', sans-serif;
+}
+
+/* =========== */
+/* Estilos Mobile First */
+.card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   min-width: 310px;
+   height: 100vh;
+   background-color: var(--opacity1);
+   border-radius: 20px;
+}
+
+
+/* Card header */
+.card__header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 60px;
+}
+
+.card__title {
+   font-size: 2.6rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+   color: white;
+}
+
+.card__profile {
+   width: 150px;
+}
+
+.card__profile-img {
+   width: 100%;
+   border-radius: 50%;
+}
+
+
+/* Card body */
+.card__form {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+}
+
+.card__input {
+   margin-top: 1.5rem;
+   padding: .8rem 1rem;
+   background-color: var(--opacity2);
+   border: none;
+   color: white;
+   border-radius: 20px;
+}
+
+.card__input--login {
+   align-self: center;
+   padding: .8rem 2rem;
+   background-color: #f9ddd973;
+   color: rgba(255, 255, 255, 0.459);
+}
+
+.card__input--login:hover {
+   background-color: #f9ddd99c;
+   color: white;
+   transition: .3s;
+   cursor: pointer;
+}
+
+.card__input--login:active {
+   transform: scale(1.1);
+}
+
+
+/* icons */
+.card__icons {
+   margin-bottom: 20px;
+   color: rgba(255, 255, 255, 0.459);
+}
+
+.card__icon {
+   margin-right: 5px;
+}
+
+.card__icon:last-of-type {
+   margin-right: 0;
+}
+
+.card__icon:hover {
+   color: white;
+   cursor: pointer;
+   transition: .3s;
+}
+
+
+/* ====================== */
+/* Media Queries */
+@media (min-width:768px) {
+   .card {
+      width: 90vw;
+      height: 95vh;
+      margin: 2rem auto;
+   }
+
+   .card__header {
+      margin-top: 80px;
+   }
+
+   .card__icons {
+      bottom: 50px;
+   }
+}
+
+/* No se como hacer para que los iconos
+no se suban :( */
+
+
+
+
+
+
+/* 
+   codigo anterior XDDDDDDDDDDDDD
+            ↓↓↓↓↓
+*/
+
+
+
+/* ESTILOS */
+/* MOBILE FIRST */
+/* body {
+   background: url(./img/fondo-desktop2.jpg) center center fixed;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mainCard {
+   margin: 2rem;
+   width: 90%;
+   height: 90vh;
+   min-height: 50vh;
+   background-color: rgba(0, 0, 0, 0.596);
+   border-radius: 2rem;
+   position: relative;
+}
+
+h1 {
+   text-align: center;
+   margin-top: 5rem;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.profile-image img {
+   width: 100%;
+   margin-top: 5rem;
+   border-radius: 15rem;
+}
+
+.profile-image {
+   width: 15rem;
+   margin: auto;
+   display: block;
+}
+
+input {
+   display: block;
+   width: 20rem;
+   border: none;
+   border-radius: 5px;
+   margin: auto;
+   color: white;
+   text-align: center;
+   background-color: rgba(0%, 0%, 0%, 0.3);
+   padding: 5px;
+   margin-top: 20px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+button {
+   display: block;
+   width: 100px;
+   margin: auto;
+   margin-top: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   border: none;
+   background-color: rgba(0%, 0%, 0%, 0.3);
+   color: white;
+   font-family: 'Montserrat', sans-serif;  
+}
+
+button:active {
+   background-color: rgba(250, 209, 207, 0.452);
+}
+
+.icons {
+   position: absolute;
+   right: 5%;
+   bottom: 5%;
+   color: rgba(255, 255, 255, 0.459);
+}
+
+.icons i {
+   margin-left: 5px;
+}
+
+.icons i active {
+   color: white;
+} */
+
+
+/* MEDIA QUERIES */
+/* @media (min-width: 768px){
+   h1 {
+      font-size: 4rem;
+   }
+
+   .profile-image {
+      width: 20rem;
+   }
+
+   input {
+      width: 30rem;
+      font-size: 1.8rem;
+   }
+
+   button {
+      width: 10rem;
+      font-size: 1.8rem;
+   }
+   
+   .icons {
+      font-size: 1.3rem;
+   }
+}
+
+@media (min-width: 1024px) {
+   h1 {
+      font-size: 5rem;
+   }
+
+   .profile-image {
+      width: 20rem;
+   }
+
+   input {
+      width: 30rem;
+   }
+
+   .icons i:hover {
+      color: white;
+   }
+   
+} */
+
